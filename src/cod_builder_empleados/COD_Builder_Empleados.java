@@ -19,7 +19,7 @@ public class COD_Builder_Empleados {
 
         Empleado em1 = new Empleado("Pepe", "Perez", "", "531a", "", 0, 0, 0, 4, 0, 0, 0, 9);
         Empleado em2 = new Empleado("Juan", "Ramirez", "", "9874e", "", 0, 0, 0, 0, 0, 5, 0, 0);
-
+       
     }
 
 }

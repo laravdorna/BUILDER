@@ -1,7 +1,8 @@
 /*
  * BUILDER :
 Se va a encargar de los valores por defecto de los atributos, por lo que
-se asignan valores por defecto a los mismos
+se asignan valores por defecto a los mismos.
+Esta clase se instancia por cada empleado que queremos crear
  */
 package cod_builder_empleados;
 
@@ -31,6 +32,25 @@ public class EmpleadoBuilder {
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.dni = dni;
+    }
+
+    /*por cada paramatetro generamos su set de los atributos no obligatorios
+    devuelve un Objeto de la clase en el cual cambiamos solo el atributo que 
+    deseemos
+     */
+    public EmpleadoBuilder setApellido2(String nuevoApellido2) {
+        this.apellido2 = nuevoApellido2;
+        return this;
+    }
+
+    /*
+    se necesita un metodo crear que devuelva un objeto de la clase EMPLEADO
+    para que una vez dados los parametros con el builder tengamos un empleado de 
+    la clase empleado
+     */
+    public Empleado crearEmpleado() {
+        return new Empleado(nombre, apellido1, apellido2, dni, cargo, dia, mes,
+                ano, altura, pie, diametro, sueldo, formacion);
     }
 
 }
