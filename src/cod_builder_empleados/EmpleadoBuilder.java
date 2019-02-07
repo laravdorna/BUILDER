@@ -26,6 +26,11 @@ public class EmpleadoBuilder {
     private int sueldo = 0;
     private int formacion = 0;
 
-    
+    //creamos el constructor por defecto con los tres atributos obligatorios
+    public EmpleadoBuilder(final String nombre, final String apellido1, final String dni) {
+        this.nombre = nombre;
+        this.apellido1 = apellido1;
+        this.dni = dni;
+    }
 
 }
