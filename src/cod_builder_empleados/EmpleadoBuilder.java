@@ -49,8 +49,7 @@ public class EmpleadoBuilder {
     la clase empleado
      */
     public Empleado crearEmpleado() {
-        return new Empleado(nombre, apellido1, apellido2, dni, cargo, dia, mes,
-                ano, altura, pie, diametro, sueldo, formacion);
+        return new BuilderE().setNombre(nombre).setApellido1(apellido1).setApellido2(apellido2).setDni(dni).setCargo(cargo).setDia(dia).setMes(mes).setAno(ano).setAltura(altura).setPie(pie).setDiametro(diametro).setSueldo(sueldo).setFormacion(formacion).createEmpleado();
     }
 
 }
