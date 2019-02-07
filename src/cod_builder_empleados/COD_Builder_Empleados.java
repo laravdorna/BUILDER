@@ -19,7 +19,18 @@ public class COD_Builder_Empleados {
 
         Empleado em1 = new Empleado("Pepe", "Perez", "", "531a", "", 0, 0, 0, 4, 0, 0, 0, 9);
         Empleado em2 = new Empleado("Juan", "Ramirez", "", "9874e", "", 0, 0, 0, 0, 0, 5, 0, 0);
-       
+        /*
+        Instancio un builder con los parametros obligatorios, y luego le añado 
+        los parametros que quiera con los set y una vez añadidos los atributos
+        deseados llamo a crearEmpleado para crear un empleado
+         */
+        /*
+        Defino un objeto empleado pero lo construyo con el contructor y los set de 
+        builder y luego llamo al metodo crear empleado que me devuelve un 
+        objeto del tipo empleado
+        */
+        Empleado jefeTaller= new EmpleadoBuilder("Jose","Ramirez", "5647e").
+                                    setApellido2("Rodriguez").crearEmpleado();
     }
 
 }
