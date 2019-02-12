@@ -17,8 +17,8 @@ public class COD_Builder_Empleados {
     public static void main(String[] args) {
         //instanciar  dos empleados con el constructor largo pero que falten parametros
 
-        Empleado em1 = new BuilderE().setNombre("Pepe").setApellido1("Perez").setDni("531a").setAltura(4).setFormacion(9).createEmpleado();
-        Empleado em2 = new BuilderE().setNombre("Juan").setApellido1("Ramirez").setDni("9874e").setDiametro(5).setFormacion(0).createEmpleado();
+        //Empleado em1 = new BuilderE().setNombre("Pepe").setApellido1("Perez").setDni("531a").setAltura(4).setFormacion(9).createEmpleado();
+        //Empleado em2 = new BuilderE().setNombre("Juan").setApellido1("Ramirez").setDni("9874e").setDiametro(5).setFormacion(0).createEmpleado();
         /*
         Instancio un builder con los parametros obligatorios, y luego le añado 
         los parametros que quiera con los set y una vez añadidos los atributos
@@ -29,8 +29,8 @@ public class COD_Builder_Empleados {
         builder y luego llamo al metodo crear empleado que me devuelve un 
         objeto del tipo empleado
         */
-        Empleado jefeTaller= new EmpleadoBuilder("Jose","Ramirez", "5647e").
-                                    setApellido2("Rodriguez").crearEmpleado();
+       // Empleado jefeTaller= new EmpleadoBuilder("Jose","Ramirez", "5647e").
+        //                            setApellido2("Rodriguez").crearEmpleado();
     }
 
 }

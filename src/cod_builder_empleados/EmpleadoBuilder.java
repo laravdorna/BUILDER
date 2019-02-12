@@ -48,8 +48,8 @@ public class EmpleadoBuilder {
     para que una vez dados los parametros con el builder tengamos un empleado de 
     la clase empleado
      */
-    public Empleado crearEmpleado() {
-        return new BuilderE().setNombre(nombre).setApellido1(apellido1).setApellido2(apellido2).setDni(dni).setCargo(cargo).setDia(dia).setMes(mes).setAno(ano).setAltura(altura).setPie(pie).setDiametro(diametro).setSueldo(sueldo).setFormacion(formacion).createEmpleado();
-    }
+//    public Empleado crearEmpleado() {
+//        return new BuilderE().setNombre(nombre).setApellido1(apellido1).setApellido2(apellido2).setDni(dni).setCargo(cargo).setDia(dia).setMes(mes).setAno(ano).setAltura(altura).setPie(pie).setDiametro(diametro).setSueldo(sueldo).setFormacion(formacion).createEmpleado();
+//    }
 
 }
